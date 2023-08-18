@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+:root {
+	--font-family: "Lato";
+	--line-height-title: 0.7;
+	--font-size-title: 3rem;
+	--font-size-subtitle: 1.3rem;
+	--margin: 10px;
+	--margin-976: 20px 30px;
+	--primary-color: white;
+	--secundary-color: #0e0e0e;
+	/* --tertiary-color: #161616; */
+	--tertiary-color: rgba(22, 22, 22, 1);
+	--ctc-color: #646cff;
+	--border-radius: 8px;
+}
+
+/*
+ Estilos iniciales
+*/
+.Typewriter {
+	display: inline-block;
+}
+.hamburger-react {
+	z-index: 100;
+	background-color: var(--tertiary-color);
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+}
+main {
+	width: 100vw;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	/* overflow: hidden; */
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* margin-bottom: 5%; */
+	height: 15vh;
+}
+
+/* Mágenes de los títulos */
+h1 {
+	margin: 0;
+}
+
+span {
+	color: var(--ctc-color);
+	margin: 0 !important;
+}
+
+.homePage-card {
+	font-family: var(--font-family);
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+	position: relative;
+	z-index: 100;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 5%;
+}
+.homePage-card-title,
+.experienceContainer-div-title {
+	font-size: var(--font-size-title);
+	color: var(--primary-color);
+	margin: var(--margin);
+	font-weight: 900;
+}
+
+.homePage-card-subtitle {
+	font-family: var(--font-family);
+	font-size: var(--font-size-subtitle);
+	text-align: center;
+	font-weight: 700;
+	margin: var(--margin);
+}
+.Typewriter {
+	color: var(--ctc-color);
+}
+.homePage-card-btn {
+	font-family: var(--font-family);
+	font-weight: 700;
+	color: var(--primary-color);
+	background-color: var(--ctc-color);
+	text-align: center;
+	width: 30%;
+	margin: var(--margin);
+	padding: var(--margin);
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+}
+.homePage-card-btn:hover {
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+}
+
+.navBar {
+	color: var(--primary-color);
+	background-color: #0e0e0e;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 150;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.navBar-item {
+	color: var(--primary-color);
+	font-size: var(--font-size-subtitle);
+	font-family: var(--font-family);
+	margin: 20px;
+	font-weight: 700;
+}
+.navBar-item:hover {
+	padding: 10px;
+	background-color: var(--ctc-color);
+	border: 1px solid var(--primary-color);
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+}
+.aboutMePage-section {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+.aboutMeArticle-card {
+	position: relative;
+	z-index: 100;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	font-family: var(--font-family);
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+	margin: 5%;
+	text-align: left;
+	overflow: auto;
+}
+
+.aboutMeArticle-card * {
+	margin: 5%;
+}
+.experiencePage-section {
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
+}
+.experiencePage-article {
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
+}
+.experienceContainer-div {
+	/* overflow: auto; */
+	position: relative;
+	z-index: 100;
+	margin: 5%;
+	border-radius: var(--border-radius);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+}
+
+.experienceCard {
+	cursor: pointer;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	font-family: var(--font-family);
+	display: grid;
+	gap: 2%;
+	grid-template-columns: 0.2fr 0.8fr;
+	grid-template-rows: 1fr;
+	padding: 4%;
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+}
+
+.experienceCard:hover {
+	border: 2px solid var(--primary-color);
+}
+
+.experienceCard-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.experienceCard-title {
+	font-size: var(--font-size-subtitle);
+	font-family: var(--font-family);
+}
+
+.experienceCard-p,
+.experienceCard-title,
+.experienceCard-subtitle {
+	margin: 0;
+	padding: 0;
+}
+.experienceCard-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+}
+
+.skillsPage-section {
+	height: 100%;
+	width: 100%;
+	/* overflow: hidden; */
+}
+
+.skillsPage-article {
+	height: 100%;
+	width: 100%;
+}
+
+.skillsContainer {
+	overflow-x: hidden;
+	position: relative;
+	z-index: 100;
+	/* height: 100%; */
+	margin: 5%;
+	background-color: var(--tertiary-color);
+	color: var(--primary-color);
+	font-family: var(--font-family);
+}
+
+.skillsContainer-title {
+	margin: 5% 5% 6% 5%;
+}
+
+.skillsContainer-title,
+.contactCard-title {
+	font-size: var(--font-size-subtitle);
+	font-family: var(--font-family);
+	color: var(--primary-color);
+}
+
+.skillsContainer-div {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 5%;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 5%;
+}
+
+.skillsContainer-svg {
+	color: white !important;
+	height: 60px;
+	width: 120px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.skillsContainer-svg:hover {
+	color: var(--ctc-color) !important;
+	border: 2px solid var(--primary-color);
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+}
+
+.skillsContainer-tooltip {
+	font-family: var(--font-family);
+	font-weight: 900;
+}
+
+.contactPage-section {
+	height: 100%;
+	width: 100%;
+	font-family: var(--font-family);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactCard {
+	margin: 5%;
+	position: relative;
+	z-index: 100;
+	background-color: var(--tertiary-color);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	align-content: center;
+	text-align: left;
+	color: var(--primary-color);
+	max-width: 500px;
+	width: 100%;
+}
+
+.contactCard-title {
+	margin: 3%;
+}
+
+.contactCard-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactCard-list-element {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-weight: 700;
+	margin: 20px;
+	gap: 10px;
+}
+
+/* .contactForm {
+	position: relative;
+	z-index: 100;
+	margin: 5%;
+}
+
+.contactForm-form {
+	display: grid;
+	grid-template-areas:
+		"name surnames"
+		"companyName email"
+		"subject subject"
+		"description description"
+		"btn btn";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.1fr 0.1fr 0.1fr 0.6fr 0.1fr;
+	column-gap: 2%;
+	row-gap: 2%;
+	max-width: 800px;
+}
+
+.contactForm-input--name {
+	grid-area: name;
+}
+
+.contactForm-input--surnames {
+	grid-area: surnames;
+}
+
+.contactForm-input--company {
+	grid-area: companyName;
+}
+
+.contactForm-input--email {
+	grid-area: email;
+}
+
+.contactForm-input--subject {
+	grid-area: subject;
+}
+
+.contactForm-textarea {
+	grid-area: description;
+}
+
+.contactForm-btn {
+	grid-area: btn;
+	justify-self: center;
+}
+
+.contactForm-input,
+.contactForm-textarea {
+	padding: 5%;
+	color: var(--primary-color);
+	background-color: var(--tertiary-color);
+	border: 1px solid var(--primary-color);
+	border-radius: var(--border-radius);
+	-webkit-border-radius: var(--border-radius);
+	-moz-border-radius: var(--border-radius);
+	-ms-border-radius: var(--border-radius);
+	-o-border-radius: var(--border-radius);
+} */
+
+@media (min-width: 1920px) {
+	.skillsContainer,
+	.experienceContainer-div,
+	.aboutMeArticle-card,
+	.skillsContainer-title {
+		margin: 3%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.aboutMeArticle-card * {
+		margin: 3%;
+	}
+
+	.aboutMeArticle-card-subtitle {
+		font-size: 2rem;
+		margin-top: 1.5%;
+		margin-bottom: 1.5%;
+	}
+
+	.aboutMeArticle-card-p {
+		font-size: 1.25rem;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 976px) {
+	/* Eliminar el hamburger */
+	.navBar > li {
+		display: none;
+	}
+	header {
+		position: relative;
+		z-index: 100;
+		width: 100%;
+		height: 10vh;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--tertiary-color);
+	}
+	.navBar {
+		position: inherit;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		background-color: rgba(0, 0, 0, 0);
+	}
+	.navBar-item {
+		margin: var(--margin-976);
+		background-color: rgba(0, 0, 0, 0);
+	}
+	nav {
+		/* margin-right: 10%; */
+		background-color: rgba(0, 0, 0, 0);
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.aboutMeArticle-card-subtitle {
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+	.aboutMeArticle-card-p {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.aboutMeArticle-card-p:last-of-type {
+		margin-bottom: 5%;
+	}
+}
+
+@media (min-width: 520px) {
+	.homePage-card-btn {
+		width: 20%;
+	}
+	.aboutMePage-section {
+		overflow: initial;
+	}
+}
