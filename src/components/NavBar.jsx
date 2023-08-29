@@ -8,6 +8,7 @@ export function NavBar() {
 
     const windowWidth = useWindowWidth();
 
+    const cvFilePath = "/AlfonsoRaveloCV.pdf";
 
     const handleClick = () => {
         if (windowWidth <= 976) {
@@ -19,11 +20,13 @@ export function NavBar() {
 
     return (
         <nav>
+            <Link className="navBar-title" to="/">ALFONSORAVELOGIL.COM</Link>
 
             {isMenuOpen
                 ?
                 // NOTA: En caso de querer refactorizar recuerda que el hamburger quedaría desplazado
                 <ul className="navBar" onClick={handleClick}>
+
                     <li className="navBar-item"><Hamburger color="white" toggled="true" onToggle={toggled => {
                         if (toggled) {
                             openMenu();
@@ -31,15 +34,14 @@ export function NavBar() {
                             closeMenu();
                         }
                     }} /></li>
-                    <Link to="/" onClick={handleClick}><li className="navBar-item">Inicio</li></Link>
                     <Link to="/aboutme" onClick={handleClick}><li className="navBar-item">Sobre mí</li></Link>
                     <Link to="/experience"><li className="navBar-item">Experiencia</li></Link>
                     {windowWidth <= 976
                         ? <Link to="/skills"><li className="navBar-item">Skills</li></Link>
                         : null
                     }
-
                     <Link to="/contact"><li className="navBar-item">Contacto</li></Link>
+                    <a href={cvFilePath} download="AlfonsoRaveloGilCV.pdf"><li className="navBar-item">CV</li></a>
                 </ul>
 
                 : <Hamburger color="white" onToggle={toggled => {
