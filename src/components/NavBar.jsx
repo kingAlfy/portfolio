@@ -8,7 +8,7 @@ export function NavBar() {
 
     const windowWidth = useWindowWidth();
 
-    const cvFilePath = "/AlfonsoRaveloCV.pdf";
+    const cvFilePath = "/AlfonsoRaveloGilCV.pdf";
 
     const handleClick = () => {
         if (windowWidth <= 976) {
@@ -36,10 +36,6 @@ export function NavBar() {
                     }} /></li>
                     <Link to="/aboutme" onClick={handleClick}><li className="navBar-item">Sobre mí</li></Link>
                     <Link to="/experience"><li className="navBar-item">Experiencia</li></Link>
-                    {windowWidth <= 976
-                        ? <Link to="/skills"><li className="navBar-item">Skills</li></Link>
-                        : null
-                    }
                     <Link to="/contact"><li className="navBar-item">Contacto</li></Link>
                     <a href={cvFilePath} download="AlfonsoRaveloGilCV.pdf"><li className="navBar-item">CV</li></a>
                 </ul>

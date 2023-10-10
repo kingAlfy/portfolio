@@ -1,7 +1,6 @@
 import "../App.css"
 
 export function ExperienceCard({ companyName, rol, time, src }) {
-    console.log(companyName)
     return (
         <div className="experienceCard">
             <div className="experienceCard-img"><img src={src} /></div>

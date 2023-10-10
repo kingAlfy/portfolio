@@ -201,11 +201,10 @@ span {
 	height: 100%;
 	/* overflow: hidden; */
 }
-.experiencePage-article {
+/* .experiencePage-article {
 	width: 100%;
 	height: 100%;
-	/* overflow: hidden; */
-}
+} */
 .experienceContainer-div {
 	/* overflow: auto; */
 	position: relative;
@@ -222,7 +221,6 @@ span {
 }
 
 .experienceCard {
-	cursor: pointer;
 	background-color: var(--tertiary-color);
 	color: var(--primary-color);
 	font-family: var(--font-family);
@@ -323,7 +321,6 @@ span {
 
 .skillsContainer-svg:hover {
 	color: var(--ctc-color) !important;
-	border: 2px solid var(--primary-color);
 	border-radius: var(--border-radius);
 	-webkit-border-radius: var(--border-radius);
 	-moz-border-radius: var(--border-radius);
@@ -395,6 +392,9 @@ span {
 	font-weight: 700;
 	margin: 20px;
 	gap: 10px;
+}
+.contactCard-list-element a {
+	color: var(--primary-color);
 }
 
 .contactCard-list-element:hover {

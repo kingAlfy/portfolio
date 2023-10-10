@@ -1,5 +1,6 @@
 import "../App.css";
 import { ExperienceCard } from "./ExperienceCard";
+import { Link } from "react-router-dom";
 
 export function ExperienceArticle() {
     return (

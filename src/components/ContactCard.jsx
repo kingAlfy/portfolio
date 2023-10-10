@@ -15,7 +15,7 @@ export function ContactCard() {
 
                 <li className='contactCard-list-element contactCard-list-element--linkedin'>
                     <GrMail />
-                    al2367.arg@gmail.com
+                    <a href="mailto:al2367.arg@gmail.com">al2367.arg@gmail.com</a>
                 </li>
 
                 <a href="https://github.com/kingAlfy/">
@@ -27,7 +27,7 @@ export function ContactCard() {
 
                 <li className='contactCard-list-element contactCard-list-element--linkedin'>
                     <FaMobileAlt />
-                    +34 619 35 41 41
+                    <a href="tel:+34 619354141">+34 619 35 41 41</a>
                 </li>
             </ul>
 
