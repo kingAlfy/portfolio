@@ -1,12 +1,17 @@
 FROM php:8.2-apache
 
-RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
+# Version deprecated
+# RUN curl -sL https://deb.nodesource.com/setup_18.x | bash -
 
 RUN apt-get update
 
 RUN apt-get install -y nodejs
 
 RUN apt-get install -y git
+
+RUN apt-get install -y npm
+
+RUN apt-get install -y nano
 
 RUN git clone https://github.com/kingAlfy/portfolio.git
 
@@ -33,6 +38,8 @@ RUN rm -fr /var/www/html/portfolio
 RUN apt-install -y certbot
 
 RUN a2ensite alfonsoravelogil.conf
+
+RUN a2dissite 000-default.conf
 
 RUN a2enmod rewrite && a2enmod ssl
 
