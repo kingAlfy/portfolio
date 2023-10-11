@@ -30,6 +30,8 @@ WORKDIR /var/www/html
 
 RUN rm -fr /var/www/html/portfolio
 
+RUN apt-install -y certbot
+
 RUN a2ensite alfonsoravelogil.conf
 
 RUN a2enmod rewrite && a2enmod ssl
